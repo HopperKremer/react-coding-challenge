@@ -1,100 +1,70 @@
-# Stan Coding Challenge
+# Getting Started with Create React App
 
-> Welcome to the Stan Coding Challenge!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Overview
+## Available Scripts
 
-To complete this challenge, you will need to write a simple [React](https://facebook.github.io/react/) based web app, and provide us the source files to be built.
+In the project directory, you can run:
 
-The purpose of this challenge is to assess your **skills and approach to composing a simple web app** given a set of screens and an API feed. We will also assess the **generated HTML, CSS, and JS** output.
+### `npm start`
 
-This challenge is expected to take about 2-4 hours.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## The Challenge
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-It's pretty simple. Using the provided screens as a reference, you'll need to build a set of React components to render the app. You'll also need to request a JSON feed, filter that data, and use the relevant fields.
+### `npm test`
 
-Although this is a basic exercise, we'll be looking for **simple, well-designed, performant, and tested code** in the submission.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Please include a `README` with setup instructions, and any tests or other documentation you created as part of your solution.
+### `npm run build`
 
-Also, add the following info to your `README`:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- How did you decide on the technical and architectural choices used as part of your solution?
-- Are there any improvements you could make to your submission?
-- What would you do differently if you were allocated more time?
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Details
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-You will need to build the following 3 pages with React:
+### `npm run eject`
 
-- A "Home" page
-- A "Series" page
-- A "Movies" page
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-The deployable solution should be built in a folder named **`dist`** with an entry point file of **`index.html`**.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Please create components for each part of the page (eg. header, content, footer, etc).
-Assets are provided in the `assets` folder.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-The pages should also be usable on mobile and tablet devices.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-You can assume that you do not have to support legacy browsers without features such as `fetch` or `flexbox`.
+## Learn More
 
-### "Home" Page
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Refer to the [screens/1-home.jpg](./screens/1-home.jpg) screen.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-This will be your `index.html` screen.
+### Code Splitting
 
-You will need to display 2 tiles, which link to the "Series" page and the "Movies" page.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### "Series" and "Movies" Pages
+### Analyzing the Bundle Size
 
-Refer to the [screens/2-series.jpg](./screens/2-series.jpg) and [screens/3-movies.jpg](./screens/3-movies.jpg) screens.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-For each page you will need to fetch this JSON feed [feed/sample.json](https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json), then:
+### Making a Progressive Web App
 
-- Display the first 21 `entries`
-- Where the entry has a `releaseYear` attribute value >= `2010`
-- Sorted by the `title` attribute value in ascending alphanumeric order
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-For the "Series" page filter on:
+### Advanced Configuration
 
-- Where the entry has a `programType` attribute value of `series`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-For the "Movies" page filter on:
+### Deployment
 
-- Where the entry has a `programType` attribute value of `movie`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-The attributes you should use to display the entries are:
+### `npm run build` fails to minify
 
-- `title`
-- `images` → `Poster Art` → `url`
-
-You will also need to handle the loading and error states of fetching the JSON feed:
-
-- "Loading" state [screens/1.1-loading.jpg](./screens/1.1-loading.jpg)
-- "Error" state [screens/1.2-error.jpg](./screens/1.2-error.jpg)
-
-## FAQ
-
-### What language, framework, build tool... should I use?
-
-You may use whatever you like as long as the solution is built using [React](https://facebook.github.io/react/) or an equivalent library.
-
-We prefer it if you did not use any third party CSS frameworks.
-
-We also prefer the use of minimal dependencies.
-
-## Useful Links
-
-- [Bitbucket](https://bitbucket.org/) - Source code hosting, with free private repositories for small teams.
-- [Google Fonts - Raleway](https://fonts.google.com/?selection.family=Raleway)
-- [React](https://facebook.github.io/react/)
-
-## Other Notes
-
-Please send through any other code or projects that you're proud of and would like to share with us.
-
-Any feedback on the coding challenge once you're done is also appreciated!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
